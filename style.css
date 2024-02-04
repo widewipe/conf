@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a82323;
+}
+
+
+
+.counter {
+    text-align: center;
+    color: rgb(255, 228, 193);
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.curPg {
+    color: #edb92e
+}
+
+
+
+#p2, #p3, #p4, #p5, #p6, #p7 {
+    display: none;
+}
+
+section, .current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80dvh;
+}
+
+section .struct {
+    background-color: rgb(245, 193, 193);
+    padding: 50px 100px;
+    border-radius: 10px;
+    width: 60dvw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content p {
+    font-size: 1.1rem
+}
+
+.content h1 {
+    font-size: 1.8rem;
+}
+
+
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 1000px;
+}
+
+.btns button {
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    /* background-color: #ffe49a; */
+    background-color: #edb92e;
+    box-shadow: 7px 7px 15px #633a21;
+    cursor: pointer;
+}
+
+.btns button:hover {
+    opacity: 0.8;
+}
+
+.btnEff {
+    box-shadow: 4px 4px 4px #633a21 inset;
+}
+
+.love {
+    color: #a82323;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 430px) {
+    .btns {
+        flex-direction: column;
+        gap: 25px;
+        margin: 0 50px;
+    }
+
+    section .struct {
+        padding: 20px 35px;
+        width: 80dvw;
+    }
+}
